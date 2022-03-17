@@ -1,3 +1,4 @@
+import 'package:day6_login_signup_page/signup.dart';
 import 'package:flutter/material.dart';
 
 class MyLogin extends StatefulWidget {
@@ -95,11 +96,18 @@ class _MyLoginState extends State<MyLogin> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Text("Not a Member?", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                                fontSize: 20.0)),
+                            const Text("Not a Member?",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0)),
                             TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const MySignup()));
+                                },
                                 child: const Text(
                                   "Sign Up",
                                   style: TextStyle(
