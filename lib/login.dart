@@ -1,3 +1,4 @@
+import 'package:day6_login_signup_page/dashboard.dart';
 import 'package:day6_login_signup_page/signup.dart';
 import 'package:flutter/material.dart';
 
@@ -69,20 +70,22 @@ class _MyLoginState extends State<MyLogin> {
                       height: 30.0,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const Text(
-                          "Sign In",
-                          style: TextStyle(
-                              fontSize: 25, fontWeight: FontWeight.w700),
-                        ),
+                        // const Text(
+                        //   "Sign In",
+                        //   style: TextStyle(
+                        //       fontSize: 25, fontWeight: FontWeight.w700),
+                        // ),
                         CircleAvatar(
                           backgroundColor: Colors.black45,
                           radius: 25.0,
                           child: IconButton(
-                            icon: const Icon(Icons.forward),
+                            icon: const Icon(Icons.login),
                             color: Colors.white,
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => const Dashboard()));
+                            },
                           ),
                         )
                       ],
