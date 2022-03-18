@@ -40,7 +40,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                       color: Colors.black54,
                       fontSize: 20.0,
                       // fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w500),
+                      fontWeight: FontWeight.w400),
                 ),
               ),
               SingleChildScrollView(
