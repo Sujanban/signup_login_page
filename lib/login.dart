@@ -1,4 +1,5 @@
 import 'package:day6_login_signup_page/dashboard.dart';
+import 'package:day6_login_signup_page/forgetpass.dart';
 import 'package:day6_login_signup_page/signup.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class _MyLoginState extends State<MyLogin> {
         body: Stack(
           children: [
             Container(
-              padding: const EdgeInsets.only(left: 35, top: 130),
+              padding: const EdgeInsets.only(left: 35, top: 180),
               child: const Text(
                 "Welcome Back!",
                 style: TextStyle(
@@ -43,6 +44,7 @@ class _MyLoginState extends State<MyLogin> {
                         fillColor: Colors.black12,
                         filled: true,
                         hintText: "Your Email",
+                        hintStyle: const TextStyle(fontSize: 18.0),
                         border: OutlineInputBorder(
                           borderSide:
                               const BorderSide(width: 3, color: Colors.blue),
@@ -59,6 +61,7 @@ class _MyLoginState extends State<MyLogin> {
                         fillColor: Colors.black12,
                         filled: true,
                         hintText: "Your Password",
+                        hintStyle: const TextStyle(fontSize: 18.0),
                         border: OutlineInputBorder(
                           borderSide:
                               const BorderSide(width: 3, color: Colors.blue),
@@ -84,7 +87,10 @@ class _MyLoginState extends State<MyLogin> {
                             icon: const Icon(Icons.login),
                             color: Colors.white,
                             onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => const Dashboard()));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dashboard()));
                             },
                           ),
                         )
@@ -120,7 +126,13 @@ class _MyLoginState extends State<MyLogin> {
                           ],
                         ),
                         TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const ForgetPassword()));
+                            },
                             child: const Text(
                               "Forget Password?",
                               style: TextStyle(

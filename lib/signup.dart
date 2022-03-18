@@ -48,7 +48,9 @@ class _MySignupState extends State<MySignup> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(30)),
                             ),
-                            hintText: "Username"),
+                            hintText: "Username",
+                      hintStyle: TextStyle(
+                          fontSize: 18.0),),
                       ),
                       const SizedBox(
                         height: 25.0,
@@ -61,7 +63,8 @@ class _MySignupState extends State<MySignup> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(30)),
                             ),
-                            hintText: "Email"),
+                            hintText: "Email",
+                            hintStyle: TextStyle(fontSize: 18.0),),
                       ),
                       const SizedBox(
                         height: 25.0,
@@ -74,7 +77,8 @@ class _MySignupState extends State<MySignup> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(30)),
                             ),
-                            hintText: "Password"),
+                            hintText: "Password",
+                          hintStyle: TextStyle(fontSize: 18.0),),
                       ),
                       // const SizedBox(
                       //   height: 25.0,
